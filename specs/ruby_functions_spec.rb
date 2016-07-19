@@ -87,5 +87,11 @@ class Functions_Practice < MiniTest::Test
     assert_equal(-40, result2)
   end
 
-  
+  def test_is_palindrome?()
+    palindrome = 98589
+    not_palindrome = 27381
+    assert_equal(true,is_palindrome?(palindrome))
+    assert_equal(false,is_palindrome?(not_palindrome))
+  end
+
 end
