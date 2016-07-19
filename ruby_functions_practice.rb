@@ -44,20 +44,15 @@ def volume_of_cube(n)
 end
 
 def volume_of_sphere(r)
-  return (((r**3)*4*Math::PI)/3).round(2)
+  return (((r**3)*4*Math::PI)/3)
 end
 
 def farenheit_to_celsius(n)
   return (n-32)*5/9 
 end
 
-def 
-
-
-
-
-
-
-
-
-
+def is_palindrome?(number)
+  snumten = number.to_s;
+  return true if snumten == snumten.reverse
+  return false
+end
